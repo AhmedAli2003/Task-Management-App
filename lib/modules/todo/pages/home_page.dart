@@ -8,6 +8,8 @@ import 'package:task_management_app/app/widgets/custom_text_field.dart';
 import 'package:task_management_app/app/widgets/height_spacer.dart';
 import 'package:task_management_app/app/widgets/reusable_text.dart';
 import 'package:task_management_app/app/widgets/width_spacer.dart';
+import 'package:task_management_app/app/widgets/xpansion_tile.dart';
+import 'package:task_management_app/modules/todo/widgets/todo_tile.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -182,6 +184,34 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                       Container(
                         color: AppColors.kBkLight,
                         height: AppValues.kHeight * 0.3,
+                        child: ListView(
+                          children: [
+                            TodoTile(
+                              start: "03:00",
+                              end: "05:00",
+                              switcher: Switch(
+                                value: true,
+                                onChanged: (val) {},
+                              ),
+                            ),
+                            TodoTile(
+                              start: "03:00",
+                              end: "05:00",
+                              switcher: Switch(
+                                value: true,
+                                onChanged: (val) {},
+                              ),
+                            ),
+                            TodoTile(
+                              start: "03:00",
+                              end: "05:00",
+                              switcher: Switch(
+                                value: true,
+                                onChanged: (val) {},
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                       Container(
                         color: AppColors.kBkLight,
@@ -190,6 +220,18 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                     ],
                   ),
                 ),
+              ),
+              const HeightSpacer(20),
+              const XpansionTile(
+                text: "Tomorrow's Task",
+                text2: "Tomorrow's tasks are shown here",
+                children: [],
+              ),
+              const HeightSpacer(20),
+              XpansionTile(
+                text: DateTime.now().add(const Duration(days: 2)).toIso8601String().substring(5, 10),
+                text2: "Tomorrow's tasks are shown here",
+                children: [],
               ),
             ],
           ),

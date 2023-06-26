@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:task_management_app/app/theme/app_colors.dart';
-import 'package:task_management_app/modules/onboarding/pages/on_boarding_page.dart';
 import 'package:task_management_app/modules/todo/pages/home_page.dart';
 
 void main() {
