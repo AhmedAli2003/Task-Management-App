@@ -4,6 +4,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:task_management_app/app/theme/app_colors.dart';
 import 'package:task_management_app/app/theme/app_style.dart';
 import 'package:task_management_app/app/widgets/reusable_text.dart';
+import 'package:task_management_app/app/widgets/width_spacer.dart';
 import 'package:task_management_app/modules/onboarding/widgets/page_one.dart';
 import 'package:task_management_app/modules/onboarding/widgets/page_two.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
@@ -65,7 +66,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                           color: AppColors.kLight,
                         ),
                       ),
-                      const SizedBox(width: 5),
+                      const WidthSpacer(5),
                       ReusableText(
                         text: "Skip",
                         style: appStyle(

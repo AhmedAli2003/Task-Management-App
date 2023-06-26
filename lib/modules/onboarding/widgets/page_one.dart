@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task_management_app/app/theme/app_colors.dart';
 import 'package:task_management_app/app/theme/app_style.dart';
 import 'package:task_management_app/app/theme/app_values.dart';
+import 'package:task_management_app/app/widgets/height_spacer.dart';
 import 'package:task_management_app/app/widgets/reusable_text.dart';
 
 class PageOne extends StatelessWidget {
@@ -24,7 +25,7 @@ class PageOne extends StatelessWidget {
               "assets/images/todo.png",
             ),
           ),
-          const SizedBox(height: 100),
+          const HeightSpacer(50),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -35,7 +36,7 @@ class PageOne extends StatelessWidget {
                     color: AppColors.kLight,
                     fontWeight: FontWeight.w600),
               ),
-              const SizedBox(height: 10),
+              const HeightSpacer(10),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30.w),
                 child: Text(

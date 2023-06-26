@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task_management_app/app/theme/app_colors.dart';
 import 'package:task_management_app/app/theme/app_values.dart';
 import 'package:task_management_app/app/widgets/custom_otln_button.dart';
+import 'package:task_management_app/app/widgets/height_spacer.dart';
 import 'package:task_management_app/modules/auth/pages/login_page.dart';
 
 class PageTwo extends StatelessWidget {
@@ -20,7 +21,7 @@ class PageTwo extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Image.asset("assets/images/todo2.png"),
-          const SizedBox(height: 50),
+          const HeightSpacer(50),
           CustomOtlnButton(
             width: AppValues.kWidth * 09,
             height: AppValues.kHeight * 0.06,

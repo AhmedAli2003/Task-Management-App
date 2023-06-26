@@ -40,6 +40,10 @@ dependencies:
   google_fonts: ^5.1.0
   flutter_vector_icons: ^2.0.0
   smooth_page_indicator: ^1.1.0
+  pinput: ^2.2.31
+  country_picker:
+    git:
+      https://github.com/AhmedAli2003/flutter_country_picker
 
 dev_dependencies:
   flutter_test:
